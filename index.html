@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RC Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>RC Car Dashboard</h1>
-  <p>Dashboard berhasil dibuat 🚗</p>
+
+  <h1>🚗 RC Car Dashboard</h1>
+
+  <div class="controls">
+    <button onclick="move('forward')">⬆ MAJU</button>
+
+    <div>
+      <button onclick="move('left')">⬅ KIRI</button>
+      <button onclick="move('stop')">⏹ STOP</button>
+      <button onclick="move('right')">➡ KANAN</button>
+    </div>
+
+    <button onclick="move('backward')">⬇ MUNDUR</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
