@@ -1,15 +1,27 @@
-<h1>🚗 RC CAR CONTROL</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RC Car Dashboard</title>
 
-<div class="card">
-  <button onclick="move('forward')">⬆</button>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <div class="row">
-    <button onclick="move('left')">⬅</button>
-    <button onclick="move('stop')">⏹</button>
-    <button onclick="move('right')">➡</button>
+  <h1>🚗 RC CAR CONTROL</h1>
+
+  <div class="controls">
+    <button onclick="sendCommand('forward')">⬆</button><br>
+
+    <button onclick="sendCommand('left')">⬅</button>
+    <button onclick="sendCommand('stop')">⏹</button>
+    <button onclick="sendCommand('right')">➡</button><br>
+
+    <button onclick="sendCommand('backward')">⬇</button>
   </div>
 
-  <button onclick="move('backward')">⬇</button>
-</div>
+  <p id="status">Status: STOP</p>
 
-<p id="status">Status: STOP</p>
+  <script src="script.js"></script>
+
+</body>
+</html>
