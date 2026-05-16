@@ -1,1 +1,5 @@
-console.log("RC Dashboard aktif");
+function move(direction) {
+  alert("Mobil bergerak: " + direction);
+
+  console.log(direction);
+}
