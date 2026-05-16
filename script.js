@@ -1,5 +1,7 @@
-function move(direction) {
-  alert("Mobil bergerak: " + direction);
+function move(direction){
+
+  document.getElementById("status").innerHTML =
+    "Status: " + direction;
 
   console.log(direction);
 }
