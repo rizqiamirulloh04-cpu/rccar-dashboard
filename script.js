@@ -1,7 +1,8 @@
-function move(direction){
+function sendCommand(direction) {
 
   document.getElementById("status").innerHTML =
-    "Status: " + direction;
+    "Status: " + direction.toUpperCase();
 
   console.log(direction);
+
 }
